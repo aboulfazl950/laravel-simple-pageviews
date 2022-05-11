@@ -37,7 +37,6 @@ class DumpVisitsBuffer extends Command {
      * @return mixed
      */
     public function handle() {
-
         $this->manager->dumpBuffer();
     }
 
