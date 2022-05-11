@@ -6,7 +6,7 @@
 
 Tracks page views of your Laravel 5.x app for traffic monitoring.
 
-To date, it has been tested with Laravel up to 5.5 and PHP 7.
+To date, it has been tested with Laravel up to 5.8 and PHP 7.4.
 
 > **IMPORTANT** If you are upgrading from previous 0.x version please [read the release notes](https://github.com/foothing/laravel-simple-pageviews/releases/tag/1.0.0).
 
@@ -25,7 +25,7 @@ Each log record keeps track of the user session, user ip and date.
 
 Install module:
 
-`composer require foothing/laravel-simple-pageviews`
+`composer require aboulfazl950/laravel-simple-pageviews`
 
 Add the service provider in `config/app.php`:
 
@@ -37,9 +37,9 @@ Add the service provider in `config/app.php`:
 
 Publish migration and configuration files:
 
-`php artisan vendor:publish provider="Foothing\Laravel\Visits\ServiceProvider --tag="config"`
+`php artisan vendor:publish --provider="Foothing\Laravel\Visits\ServiceProvider" --tag="config"`
 
-`php artisan vendor:publish provider="Foothing\Laravel\Visits\ServiceProvider --tag="migrations"`
+`php artisan vendor:publish --provider="Foothing\Laravel\Visits\ServiceProvider" --tag="migrations"`
 
 Run the migration:
 
