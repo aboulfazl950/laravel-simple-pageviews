@@ -30,7 +30,7 @@ class Visits {
         }
 
         $visit = new VisitBuffer();
-        $visit->session = $request->getSession()->getId();
+        $visit->session = session_id();//$request->getSession()->getId();
         $visit->ip = $request->getClientIp();
         $visit->url = $request->path();
         $visit->date = date('Y-m-d');
